@@ -1,0 +1,11 @@
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\bin\Debug\Demo.exe.config
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\bin\Debug\Demo.exe
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\bin\Debug\Demo.pdb
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.csproj.SuggestedBindingRedirects.cache
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.exe
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.pdb
+C:\Users\30699\Desktop\DBHelperDemo\Demo\Demo\obj\Debug\Demo.Form1.resources

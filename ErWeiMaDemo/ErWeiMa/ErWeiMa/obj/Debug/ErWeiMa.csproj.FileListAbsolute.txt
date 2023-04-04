@@ -1,0 +1,17 @@
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.csproj.AssemblyReference.cache
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.frmDemo.resources
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.Properties.Resources.resources
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.csproj.GenerateResource.cache
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.csproj.CoreCompileInputs.cache
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\ErWeiMa.exe.config
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\ErWeiMa.exe
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\ErWeiMa.pdb
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\QRCoder.dll
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\zxing.dll
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\zxing.presentation.dll
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\zxing.xml
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\bin\Debug\zxing.presentation.xml
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.csproj.CopyComplete
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.exe
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.pdb
+C:\Users\30699\Desktop\ErWeiMaDemo\ErWeiMa\ErWeiMa\obj\Debug\ErWeiMa.csproj.SuggestedBindingRedirects.cache

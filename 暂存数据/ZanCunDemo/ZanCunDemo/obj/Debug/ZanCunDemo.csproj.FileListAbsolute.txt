@@ -1,0 +1,10 @@
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\bin\Debug\ZanCunDemo.exe.config
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\bin\Debug\ZanCunDemo.exe
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\bin\Debug\ZanCunDemo.pdb
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.csproj.AssemblyReference.cache
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.Form1.resources
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.Properties.Resources.resources
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.csproj.GenerateResource.cache
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.csproj.CoreCompileInputs.cache
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.exe
+C:\Users\30699\Desktop\CTRL-C-V\暂存数据\ZanCunDemo\ZanCunDemo\obj\Debug\ZanCunDemo.pdb

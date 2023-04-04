@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/26/2019 10:06:07" ReportInfo.Modified="03/13/2023 16:29:15" ReportInfo.CreatorVersion="2014.4.8.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+
+    private void Table2_BeforePrint(object sender, EventArgs e)
+    {
+      try
+      {
+        //MessageBox.Show(Table1.RowCount + &quot;,&quot; + Table1.ColumnCount);
+        
+                  
+        for(int j=0;j&lt;Table2.RowCount;j++)
+        {                 
+          switch((String)Report.GetColumnValue(&quot;DataGS.RowIndex&quot;))
+          {
+            case &quot;小计&quot;:
+            {
+              //MessageBox.Show(&quot;is&quot;+(String)Report.GetColumnValue(&quot;DataGS1.isTitle&quot;)+&quot;coluns&quot;+i.ToString());
+              for(int i=0;i&lt;Table2.ColumnCount;i++)
+              {
+                Table2.Rows[j][i].Fill=new SolidFill(Color.FromArgb(230,230,230));
+              }
+              Table2.Rows[j][0].ColSpan=2;
+              break;
+            }
+            default:
+            {
+              Table2.Rows[j][0].ColSpan=1;
+              break;
+            }
+          }
+        }
+      }
+      catch{}
+    }
+  }
+}
+</ScriptText>
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperHeight="140" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="15" OtherPagesSource="15" Fill.Color="White">
+    <PageHeaderBand Name="PageHeader1" Width="793.8" Height="162.54" Fill.Color="White">
+      <TableObject Name="Table1" Left="28.35" Top="132.3" Width="733.79" Height="29.86">
+        <TableColumn Name="Column33" Width="56.7"/>
+        <TableColumn Name="Column1" Width="165.8"/>
+        <TableColumn Name="Column37"/>
+        <TableColumn Name="Column24" Width="61.99"/>
+        <TableColumn Name="Column2" Width="80.75"/>
+        <TableColumn Name="Column45" Width="103.95"/>
+        <TableColumn Name="Column29" Width="198.45"/>
+        <TableRow Name="Row4" Height="29.86">
+          <TableCell Name="Cell123" Border.Lines="All" Text="序号" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell16" Border.Lines="All" Text="商品名称" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell128" Border.Lines="All" Text="价格" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell112" Border.Lines="All" Text="数量" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell17" Border.Lines="All" Text="重量(kg)" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell138" Border.Lines="All" Text="小计" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell118" Border.Lines="All" Text="备注" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <BarcodeObject Name="Barcode1" Left="699.3" Top="37.8" Width="60.48" Height="60.48" AutoSize="false" Text="[Barcode]" ShowText="false" AllowExpressions="true" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="false"/>
+      <TextObject Name="Text1" Top="47.25" Width="793.8" Height="47.25" Text="毛 猪 采 购 单" HorzAlign="Center" VertAlign="Center" Font="宋体, 21pt, style=Bold"/>
+      <TextObject Name="Text2" Left="481.95" Top="9.45" Width="283.5" Height="18.9" Text="第 [Page#] 页，共 [TotalPages#] 页" HorzAlign="Right" Font="宋体, 11pt, style=Bold"/>
+      <TableObject Name="Table4" Left="28.35" Top="103.95" Width="737.1" Height="29.86">
+        <TableColumn Name="Column13" Width="214.2"/>
+        <TableColumn Name="Column14" Width="308.7"/>
+        <TableColumn Name="Column15" Width="214.2"/>
+        <TableRow Name="Row13" Height="29.86">
+          <TableCell Name="Cell52" Text="单号：[DanHao]" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell53" Text="供应商：[Supplier]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell54" Text="日期：[Date]" HorzAlign="Right" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <LineObject Name="Line1" Left="18.9" Top="28.35" Width="746.55" Diagonal="true"/>
+      <TextObject Name="Text3" Left="18.9" Top="9.45" Width="198.45" Height="18.9" Text="黎泉青禾" Font="宋体, 11pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="DataInfo" Top="166.54" Width="793.8" Height="29.86" Fill.Color="White">
+      <TableObject Name="Table2" Left="28.35" Width="733.79" Height="29.86" BeforePrintEvent="Table2_BeforePrint">
+        <TableColumn Name="Column34" Width="56.7"/>
+        <TableColumn Name="Column5" Width="165.8"/>
+        <TableColumn Name="Column40"/>
+        <TableColumn Name="Column25" Width="61.99" AutoSize="true"/>
+        <TableColumn Name="Column6" Width="80.75"/>
+        <TableColumn Name="Column46" Width="103.95"/>
+        <TableColumn Name="Column30" Width="198.45"/>
+        <TableRow Name="Row8" Height="29.86">
+          <TableCell Name="Cell124" Border.Lines="All" Text="[DataGS.RowIndex]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell32" Border.Lines="All" Text="[DataGS.GoodsName]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell131" Border.Lines="All" Text="[DataGS.GoodsPrice]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell113" Border.Lines="All" Text="[DataGS.GoodsCount]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell33" Border.Lines="All" Text="[DataGS.ZhongLiang]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell139" Border.Lines="All" Text="[DataGS.XiaoJi]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell119" Border.Lines="All" Text="[DataGS.Note]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <ChildBand Name="Child1" Top="200.4" Width="793.8" Height="29.86" Fill.Color="White" CompleteToNRows="9">
+        <TableObject Name="Table5" Left="28.35" Width="733.79" Height="29.86">
+          <TableColumn Name="Column35" Width="56.7"/>
+          <TableColumn Name="Column16" Width="165.8"/>
+          <TableColumn Name="Column42"/>
+          <TableColumn Name="Column26" Width="61.99"/>
+          <TableColumn Name="Column17" Width="80.75"/>
+          <TableColumn Name="Column47" Width="103.95"/>
+          <TableColumn Name="Column31" Width="198.45"/>
+          <TableRow Name="Row24" Height="29.86">
+            <TableCell Name="Cell125" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell96" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell133" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell114" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell97" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell140" Border.Lines="All" Font="宋体, 11pt, style=Bold"/>
+            <TableCell Name="Cell120" Border.Lines="All" Font="宋体, 11pt, style=Bold"/>
+          </TableRow>
+        </TableObject>
+      </ChildBand>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="234.26" Width="793.8" Height="59.72" Fill.Color="White">
+      <TableObject Name="Table3" Left="28.35" Width="733.81" Height="59.72">
+        <TableColumn Name="Column36" Width="56.7"/>
+        <TableColumn Name="Column9" Width="165.81"/>
+        <TableColumn Name="Column44"/>
+        <TableColumn Name="Column27" Width="61.99"/>
+        <TableColumn Name="Column10" Width="80.76"/>
+        <TableColumn Name="Column48" Width="103.95"/>
+        <TableColumn Name="Column32" Width="198.45"/>
+        <TableRow Name="Row12" Height="29.86">
+          <TableCell Name="Cell126" Border.Lines="All" Text="合计" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell48" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell136" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell115" Border.Lines="All" Text="[GoodsCountHJ]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell49" Border.Lines="All" Text="[ZhongLiangHJ]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell141" Border.Lines="All" Text="[JiaGeHJ]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell121" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row22" Height="29.86">
+          <TableCell Name="Cell127" Border.Lines="All" Text="备注" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell88" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="[Note]" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold" ColSpan="5"/>
+          <TableCell Name="Cell116" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell89" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell142" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell122" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+    </ReportSummaryBand>
+    <PageFooterBand Name="PageFooter1" Top="297.98" Width="793.8" Height="30.7" Fill.Color="White">
+      <TableObject Name="Table6" Left="28.35" Width="729.39" Height="18.9">
+        <TableColumn Name="Column20" Width="184.71"/>
+        <TableColumn Name="Column28" Width="113.4"/>
+        <TableColumn Name="Column21" Width="118.56"/>
+        <TableColumn Name="Column22" Width="128.01"/>
+        <TableColumn Name="Column23" Width="184.71"/>
+        <TableRow Name="Row27">
+          <TableCell Name="Cell108" Text="操作人：[User]" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell117" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell109" Text="财务签字：" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell110" Font="宋体, 11pt, style=Bold"/>
+          <TableCell Name="Cell111" Text="收款人签字：" Font="宋体, 11pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

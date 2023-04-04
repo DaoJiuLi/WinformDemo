@@ -1,0 +1,8 @@
+this.FormBorderStyle = FormBorderStyle.None;//无边框
+this.StartPosition = FormStartPosition.CenterParent;//基于父窗体居中
+this.dataGridView1.ReadOnly = false;//修改
+this.dataGridView1.AllowUserToAddRows = false;//添加
+this.dataGridView1.AllowUserToDeleteRows = false;//删除
+this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//列自动调整模式
+this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;//行选中的样式
+dataGridView1.RowsDefaultCellStyle.BackColor = Color.LightGray;//数据奇数行背景色设置

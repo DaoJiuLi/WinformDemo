@@ -1,0 +1,86 @@
+ /// <summary>
+        /// 保存图片
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            #region 使用的 WebClient
+            //SaveFileDialog savefiledialog = new SaveFileDialog();
+            //savefiledialog.Filter = "jpeg image|*.jpg|bitmap image|*.bmp|gif image|*.gif|png image|*.png";
+            //savefiledialog.Title = "save image";
+            //savefiledialog.ShowDialog();
+            //if (savefiledialog.FileName != "")
+            //{
+            //    WebClient client = new WebClient();
+            //    //client.DownloadFile("c:\\users\\30699\\desktop\\微信图片_20230329084841.jpg", savefiledialog.FileName);
+            //    client.DownloadFile("http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1305/16/c4/20990657_1368686545122.jpg", savefiledialog.FileName);
+            //    //client.DownloadFile(new url(openfiledialog.filename), savefiledialog.filename);
+            //}
+            ////string url = "https://www.example.com/";
+            ////Process.Start(url);
+            #endregion
+            #region 
+            // 创建SaveFileDialog对象
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JPEG Image|*.jpg|Bitmap Image|*.bmp|GIF Image|*.gif|PNG Image|*.png";
+            saveFileDialog.Title = "Save Image";
+
+            // 如果用户点击了“保存”按钮
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // 创建HttpClient对象
+                HttpClient client = new HttpClient();
+
+                // 发送GET请求获取图片
+                HttpResponseMessage response = await client.GetAsync("http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1305/16/c4/20990657_1368686545122.jpg");
+                if (response.IsSuccessStatusCode)
+                {
+                    // 读取响应内容并保存到本地
+                    Stream stream = await response.Content.ReadAsStreamAsync();
+                    //Bitmap bt = new Bitmap(Image.FromStream(stream));
+                    Image image = Image.FromStream(stream);
+                    //Bitmap bt=new Bitmap(image);
+                    image.Save(saveFileDialog.FileName, ImageFormat.Jpeg);
+                }
+            }
+            #endregion
+        }
+
+
+
+
+
+
+
+
+foreach (Control item in panel1.Controls)
+            {
+                //tbBeiZhu.Clear();
+                if (item is TextBox)
+                {
+                    ((TextBox)item).Clear();
+                }
+
+                if (item is ComboBox)
+                {
+                    ((ComboBox)item).SelectedIndex = 0;
+                }
+
+                if (item is DateTimePicker)
+                {
+                    ((DateTimePicker)item).Value = DateTime.Now;
+                }
+            }
+            dt.Rows.Clear();
+            dgvList.DataSource = dt;
+
+ ////逆向便利删除
+                    //for (int i = dgvExecl.Rows.Count - 1; i >= 0; i--)
+                    //{
+                    //    if (Convert.ToInt32(dgvExecl.Rows[i].Cells["供应商1"].Value) == (int)cmbGongYing.SelectedValue)
+                    //    {
+                    //        int rowIndex = dgvExecl.Rows[i].Index;
+                    //        dgvExecl.Rows.RemoveAt(rowIndex);
+                    //    }
+                    //}

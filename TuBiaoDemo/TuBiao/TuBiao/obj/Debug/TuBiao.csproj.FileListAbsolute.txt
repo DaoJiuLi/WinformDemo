@@ -1,0 +1,13 @@
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\bin\Debug\TuBiao.exe.config
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\bin\Debug\TuBiao.exe
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\bin\Debug\TuBiao.pdb
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.csproj.AssemblyReference.cache
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.csproj.SuggestedBindingRedirects.cache
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.Form1.resources
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.Properties.Resources.resources
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.csproj.GenerateResource.cache
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.csproj.CoreCompileInputs.cache
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.exe
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.pdb
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.Form2.resources
+C:\Users\30699\Desktop\TuBiaoDemo\TuBiao\TuBiao\obj\Debug\TuBiao.Form3.resources

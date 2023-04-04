@@ -1,0 +1,6 @@
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\AforgeDemo.Form1.resources
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\30699\Desktop\CTRL-C-V\摄像头\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache

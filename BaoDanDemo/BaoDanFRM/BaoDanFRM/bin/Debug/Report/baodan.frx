@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/14/2023 20:07:04" ReportInfo.Modified="04/03/2023 10:52:09" ReportInfo.CreatorVersion="2014.4.8.0">
+  <Styles Name="Standard">
+    <Style Name="Title" Font="宋体, 12pt, style=Bold"/>
+    <Style Name="Header" Font="宋体, 10pt, style=Bold"/>
+    <Style Name="Group" Font="宋体, 10pt, style=Bold"/>
+    <Style Name="Data"/>
+    <Style Name="Footer"/>
+    <Style Name="EvenRows" Fill.Color="WhiteSmoke"/>
+  </Styles>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlq+rW0RkboK+/8CKGGYUID3ctBV8q9SvKYxl3iiE7vBnh7Tgou0+4WFf3NfmPSvHVFRTCVKLxdqaUJjdg+maGagwrXpS2F7FeJLU9w5DzvgGn617OvXFzS/AuT8C5VtQr5St2a6xFk+viGFrHIKTY7fiB/glwpaoZKhb9iz/iV+k4=">
+      <TableDataSource Name="tb_baodan" DataType="System.Int32" Enabled="true" TableName="tb_baodan">
+        <Column Name="id" DataType="System.Int32"/>
+        <Column Name="name" DataType="System.String"/>
+        <Column Name="age" DataType="System.Int32"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Dock="Fill" Text="报单   [Date]&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="40.09" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Width="245.7" Height="18.9" Text="id" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+      <TextObject Name="Text5" Left="245.7" Width="236.25" Height="18.9" Text="姓名" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+      <TextObject Name="Text7" Left="481.95" Width="236.25" Height="18.9" Text="年龄" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="70.72" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="tb_baodan">
+      <TextObject Name="Text2" Width="245.7" Height="18.9" Text="[tb_baodan.id]" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="245.7" Width="236.25" Height="18.9" Text="[tb_baodan.name]" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="481.95" Width="236.25" Height="18.9" Text="[tb_baodan.age]" HorzAlign="Center" VertAlign="Center" Font="宋体, 10pt, style=Bold"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="91.91" Width="718.2" Height="18.9">
+      <TextObject Name="Text8" Width="718.2" Height="18.9" Dock="Fill" Text="[PageN]" HorzAlign="Right" Font="宋体, 9pt" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
